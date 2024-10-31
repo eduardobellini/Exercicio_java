@@ -1,0 +1,22 @@
+import java.math.BigDecimal;
+
+public class Cliente {
+    public String getCadastroNome() {
+        return cadastroNome;
+    }
+
+    public void setCadastroNome(String cadastroNome) {
+        this.cadastroNome = cadastroNome;
+    }
+
+    public BigDecimal getCadastroCpf() {
+        return cadastroCpf;
+    }
+
+    public void setCadastroCpf(BigDecimal cadastroCpf) {
+        this.cadastroCpf = cadastroCpf;
+    }
+
+    private String cadastroNome;
+    private BigDecimal cadastroCpf;
+}
