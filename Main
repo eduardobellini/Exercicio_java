@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args){
+
+        Scanner sc = new Scanner(System.in);
+        Cliente a = new Cliente();
+
+
+        int opcao;
+
+        System.out.println("Bom dia, já tem cadastro? ");
+        System.out.println("1.sim" );
+        System.out.println("2.não");
+        opcao = sc.nextInt();
+
+        switch (opcao) {
+            case 1:
+            System.out.println("Bom dia, já tem cadastro?");
+                System.out.println("1.sim");
+                System.out.println("2.Não");
+                sc.nextInt();
+            if (opcao == 1){
+                System.out.println("Informe o CPF:");
+            }
+            case 2:
+                System.out.println("Qual seu nome: ");
+                a.setCadastroNome(sc.next());
+                System.out.println("Agora cadastre o CPF: ");
+                a.setCadastroCpf(sc.nextBigDecimal());
+        }
+
+        System.out.println("--------Nota Fiscal---------");
+        System.out.println("Cliente: " +  a.getCadastroNome());
+        System.out.println("CPF: " + a.getCadastroCpf());
+        System.out.println("");
+        System.out.println("Produtos:");
+        System.out.println("----------------------------");
+    }
+}
